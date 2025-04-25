@@ -67,7 +67,7 @@ app = FastAPI(
     version="0.1.0",
 )
 ### TODO 同一オリジンにアップロードしてcorsは許可しない
-origins = ["*"]
+origins = ["http://localhost:3000"]
 
 app.add_middleware(
     CORSMiddleware,
