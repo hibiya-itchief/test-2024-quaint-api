@@ -98,10 +98,11 @@ class Settings(BaseSettings):
     ## Google Analytics Property ID
     ga_property_id: str = os.getenv("GA_PROPERTY_ID", "")
 
+    '''
     class Config:
         env_file = "app/.env"
         secrets_dir = "/run/secrets"
-
+    '''
 
 params = Parameters()
 settings = Settings()
